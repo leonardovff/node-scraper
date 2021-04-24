@@ -1,0 +1,36 @@
+{
+    "env": {
+      "commonjs": true
+    },
+    "extends": [
+      "standard"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 11
+    },
+    "rules": {
+      "semi": [
+        2,
+        "always"
+      ],
+      "func-style": [
+        "error",
+        "declaration",
+        {
+          "allowArrowFunctions": true
+        }
+      ],
+      "comma-dangle": [
+        "error",
+        {
+          "arrays": "always-multiline",
+          "objects": "always-multiline",
+          "imports": "always-multiline",
+          "exports": "always-multiline"
+        }
+      ],
+      "camelcase": "true",
+      "no-throw-literal": "off"
+    }
+  }
+  
