@@ -17,24 +17,24 @@ const scraper = async () => {
     
     await openAlphabetData(page);
 
-    const AlphabetData = await getAlphabetData(page);
+    const alphabetData = await getAlphabetData(page);
     const yearlyFinancials = await getYearlyFinancialData(page);
     
     await browser.close();
 
     return {
-        AlphabetData,
+        alphabetData,
         yearlyFinancials
     }
 }
 
 scraper()
-    .then(({AlphabetData, yearlyFinancials}) => {
+    .then(({alphabetData, yearlyFinancials}) => {
         const response = JSON.stringify({
             'stock': 'GOOG',
             'IPO': '2004',
             'industry': 'Internet Content & Information',
-            data: AlphabetData, 
+            data: alphabetData, 
             yearlyFinancials
         }, null, 2);
         
