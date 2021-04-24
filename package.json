@@ -2,8 +2,9 @@
   "name": "fit-web",
   "version": "1.0.0",
   "description": "node application to get data from place not structured",
-  "main": "index.js",
+  "main": "src/scraper.js",
   "scripts": {
+    "start": "node src/scraper.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

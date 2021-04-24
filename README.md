@@ -1,5 +1,5 @@
 ## What is it
-Node.js application to get data from a place where the data isn't structured
+Node.js application to get data from a place where the data aren't structured
 
 
 ## Requiments
@@ -15,5 +15,7 @@ npm install
 
 ### 2. Run the scraper
 ```bash
-node scraper.js
+node src/scraper.js 
+# or
+npm start
 ```
